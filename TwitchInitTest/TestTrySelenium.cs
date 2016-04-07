@@ -78,7 +78,7 @@ namespace SeleniumTests
                     //find the following link
                     driver.FindElement(By.Id("header_following")).Click();
                     //still some problems with timeout 
-                    wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.ClassName("game item")));
+                    wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.ClassName("game-item")));
                
                     ICollection<IWebElement> diabloGameElements = driver.
                         FindElements(By.XPath("//a[@title = 'Diablo II: Lord of Destruction']"));
